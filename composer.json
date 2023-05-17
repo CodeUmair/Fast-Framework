@@ -1,6 +1,6 @@
 {
-    "name": "dune/dune",
-    "description": "Dune PHP Framework",
+    "name": "fast/fast",
+    "description": "Fast PHP Framework",
     "type": "project",
     "license": "MIT",
     "authors": [
