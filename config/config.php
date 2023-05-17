@@ -1,7 +1,7 @@
 <?php
 
 /** Base URL with trailing slash / at the end */
-const BASE_URL = 'https://dune.test/';
+const BASE_URL = 'https://fast-framework.test/';
 
 /** App Debug */
 const APP_DEBUG = 1;
