@@ -1,0 +1,2 @@
+[13-May-2023 10:17:56 UTC] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - session is not active in C:\laragon\www\dune\app\Core\Session.php on line 46
+[13-May-2023 10:18:07 UTC] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - session is not active in C:\laragon\www\dune\app\Core\Session.php on line 46

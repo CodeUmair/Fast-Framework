@@ -1,0 +1,28 @@
+{
+    "name": "dune/dune",
+    "description": "Dune PHP Framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Umair Durrani",
+            "email": "umair098@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "bramus/router": "~1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/functions.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
