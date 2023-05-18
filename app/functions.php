@@ -64,24 +64,21 @@ if (!function_exists('getIp')) {
     }
 }
 
-/** Redirect function */
+/** Redirect Function */
 if (!function_exists('redirect')) {
     function redirect($url)
     {
-        // Sanitize the URL to prevent any malicious input
-        $url = filter_var($url, FILTER_SANITIZE_URL);
-
-        // Validate the URL to ensure it is safe to redirect to
-        if (!filter_var($url, FILTER_VALIDATE_URL)) {
-            die("Invalid URL");
+        if (!headers_sent()) {
+            header('Location: ' . $url, true, 302);
+        } else {
+            echo '<script type="text/javascript">';
+            echo 'window.location.href="' . $url . '";';
+            echo '</script>';
+            echo '<noscript>';
+            echo '<meta http-equiv="refresh" content="0;url=' . $url . '" />';
+            echo '</noscript>';
         }
-
-        // Use a 301 redirect to indicate that the page has permanently moved
-        header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $url);
-
-        // Exit the script to prevent any further execution
-        exit();
+        exit;
     }
 }
 
