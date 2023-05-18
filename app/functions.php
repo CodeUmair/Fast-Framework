@@ -78,7 +78,7 @@ if (!function_exists('redirect')) {
             echo '<meta http-equiv="refresh" content="0;url=' . $url . '" />';
             echo '</noscript>';
         }
-        exit;
+        exit();
     }
 }
 

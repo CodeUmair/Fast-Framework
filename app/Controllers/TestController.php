@@ -10,9 +10,9 @@ class TestController extends BaseController
     public function test()
     {
         // Session::set("is_admin", 1);
-        Session::destroySession();
+        // Session::destroySession();
         // Session::regenerate();
-        dd(Session::is_Admin());
+        // dd(Session::is_Admin());
         // dd($_SESSION);
         // echo "<br>";
         $xss = '<script>alert("XSS")</script>';
